@@ -13,3 +13,6 @@ To play the game, you can use an emulator like Tilem (https://sourceforge.net/pr
 ![TitleScreen](https://github.com/billpottle/Quest/blob/master/Pixel%20Art%20Bitmaps/image4.jpg)
 ![TitleScreen](https://github.com/billpottle/Quest/blob/master/Pixel%20Art%20Bitmaps/image5.jpg)
 ![TitleScreen](https://github.com/billpottle/Quest/blob/master/Pixel%20Art%20Bitmaps/image6.jpg)
+
+See the full instruction booklet with more art in the "Instructions and Images" folder
+![Characters](https://github.com/billpottle/Quest/blob/master/Instructions%20and%20Images/Enemies.png)
