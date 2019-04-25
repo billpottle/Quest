@@ -1,0 +1,1028 @@
+K+.25->K
+ClrDraw
+If K=1
+Text(5,27,"HOUSE OF KOTEN"
+If K=2
+Text(5,25,"SOUTHERN PALACE"
+If K=3
+Text(5,39,"EDO")
+If K=4
+Text(5,37,"TOKAI")
+If K=5
+Text(5,27,"MONSTER HOUSE"
+If K=6
+Text(5,27,"HOUSE OF ELDER")
+If K=7
+Text(5,38,"YOKO")
+If K=8
+Text(5,37,"KENTO")
+If K=9
+Text(5,37,"MIKAMI")
+If K=10
+Text(5,27,"NORTHERN PALACE")
+If K=11
+Text(5,38,"KODO")
+If K=12
+Text(5,37,"YASHIKI")
+If K=13
+Text(5,25,"GRAVE OF YOSHI")
+If K=14
+Text(5,27,"BARRIER POINT")
+If K=15
+Text(3,4,"PALACE OF SHINTO")
+If (K=3) or (K=4) or (K=7) or (K=9) or (K=11) or (K=12) or (K=8)
+Then
+	Line(48,68,48,59)
+	Line(49,68,49,59)
+	Line(50,68,50,59)
+	Line(51,68,51,59)
+	Line(52,68,52,59)
+	Line(37,59,63,59)
+	Line(37,58,63,58)
+	Line(37,57,63,57)
+	Line(37,56,63,56)
+	Line(37,55,63,55)
+	Line(37,54,63,54)
+	Line(43,51,57,51)
+	Line(43,50,57,50)
+	Line(43,49,57,49)
+	Line(43,47,57,47)
+	Line(43,45,57,45)
+	Line(37,44,47,44)
+	Line(37,43,47,43)
+	Line(37,42,47,42)
+	Line(37,41,47,41)
+	Line(37,40,47,40)
+	Line(37,38,47,38)
+	Line(37,37,47,37)
+	Line(53,43,63,43)
+	Line(53,42,63,42)
+	Line(53,41,63,41)
+	Line(53,40,63,40)
+	Line(53,38,63,38)
+	Line(53,37,63,37)
+	Line(32,36,47,36)
+	Line(32,34,47,34)
+	Line(32,33,47,33)
+	Line(32,32,47,32)
+	Line(32,30,47,30)
+	Line(32,29,47,29)
+	Line(53,36,68,36)
+	Line(53,34,68,34)
+	Line(53,33,68,33)
+	Line(53,32,68,32)
+	Line(53,30,68,30)
+	Line(53,29,68,29)
+End
+Pause 
+If (K=1) or (K=5) or (K=13) or (K=6) or (K=14)
+Then
+	Line(51,60,51,65)
+	Line(51,59,51,64)
+	
+	40->X
+	42->A
+	Line(X,A,X,A+27)
+	Line(X+22.5,A,X+22.5,A+27)
+	Line(X-7.5,A+22.5,X+7.5,A+33.5)
+	Line(X+7.5,A+33.5,X+15,A+33.5)
+	Line(X+15,A+33.5,X+30,A+22.5)
+	Pause 
+	ClrHome
+	If K=1
+	Goto S
+	If K=5
+	Goto M
+	If K=14
+	Then
+		If F<3
+		Then
+			Disp "THE BARRIER IS
+			Disp "TOO STRONG FOR
+			Disp "KOTEN TO BREAK
+			Pause 
+			ClrHome
+			Goto Q
+		Else
+			Disp "AS THE THREE
+			Disp "CRYSTALS COME
+			Disp "TOGETHER,
+			Disp "KOTEN FEELS THE 
+			Disp "POWER ALL AROUND
+			Disp "HIM
+			Pause 
+			ClrHome
+			Disp "KOTEN BREAKS THE
+			Disp "BARRIER
+			Pause 
+			ClrDraw
+			RecallPic Pic4
+			prgmAUX1
+			15->Y
+			Goto 9
+		End
+	End
+	If K=13
+	Then
+		For(X,0,5,1
+			Line(42-X,44,42-X,37
+		End
+		For(X,0,4,1
+			Line(59+X,44,59+X,37
+		End
+		Pause 
+	End
+End
+If K=6
+Then
+	ClrHome
+	Disp "ELDER:TO FIND"
+	Disp "THE EVIL ONE,"
+	Disp "YOU MUST GO TO"
+	Disp "THE BARRIER"
+	Disp "POINT. IF YOU"
+	Disp "POSESS THE THREE"
+	Disp "CRYSTALS,"
+	Pause 
+	ClrHome
+	Disp "YOU WILL BE ABLE
+	Disp "TO CROSS TO THE
+	Disp "FORBIDDEN LAND.
+	Pause 
+	Goto Q
+End
+If (K=2) or (K=10) or (K=15)
+Then
+	For(X,0,4,1
+		Line(48+X,97,48+X,18
+	End
+	Line(53,2,68,2
+	Line(53,3,68,3
+	Line(53,5,68,5
+	Line(53,6,68,6
+	Line(53,8,68,8
+	Line(53,9,63,9
+	Line(53,11,63,11
+	Line(53,12,63,12
+	Line(53,13,63,13
+	Line(53,15,63,15
+	Line(53,16,63,16
+	Line(47,2,32,2
+	Line(47,3,32,3
+	Line(47,5,32,5
+	Line(47,6,32,6
+	Line(47,8,32,8
+	Line(47,9,37,7
+	For(X,0,3,1
+		Line(47,11+X,37,11+X
+	End
+	Line(47,16,37,16
+	Line(68,17,32,17
+	Line(68,19,32,19
+	Line(68,20,32,20
+	Line(68,21,32,21
+	Line(68,23,32,23
+	Line(68,24,32,24
+	Line(57,25,43,25
+	Line(57,27,43,27
+	Line(57,28,43,28
+	Line(57,29,43,29
+	Line(57,31,43,31
+	Line(57,32,43,32
+	Line(63,34,37,34
+	Line(63,35,37,35
+	Line(63,37,37,37
+	Line(63,38,37,38
+	Line(63,40,37,40
+	Line(32,42,36,42
+	Line(32,43,36,43
+	Line(32,45,36,45
+	Line(32,47,36,47
+	Line(32,48,36,48
+	Line(64,42,68,42
+	Line(64,43,68,43
+	Line(64,45,68,45
+	Line(64,47,68,47
+	Line(64,48,68,48
+	Line(43,50,57,50
+	Line(43,51,57,51
+	Line(43,53,57,53
+	Line(43,55,57,55
+	Line(43,56,57,56
+	Line(43,66,57,66
+	Line(43,67,57,67
+	Line(43,69,57,69
+	Line(43,71,57,71
+	Line(43,72,57,72
+	For(X,0,3,1
+		Line(43,82+X,57,82+X
+	End
+	Line(43,87,57,87
+	Line(43,88,57,88
+	If K=2
+	Then
+		ClrHome
+		Disp "EMPEROR:KOTEN
+		Disp "THANK YOU FOR
+		Disp "COMING. SHINTO
+		Disp "HAS TAKEN MY
+		Disp "DAUGHTER.
+		Pause 
+		ClrHome
+		Disp "IF OU FIND THE
+		Disp "THREE CRYSTALS
+		Disp "OF POWER, YOU
+		Disp "CAN DEFEAT HIM.
+		Pause 
+		ClrHome
+		Disp "KOREN:I WILL NOT
+		Disp "FAIL YOU.
+		Pause 
+		ClrHome
+		Disp "EMPEROR:I HAVE
+		Disp "HEARD THAT THERE
+		Disp "WAS A MONSTER
+		Disp "LIVING SOUTH OF 
+		Disp "TOKAI.
+		Pause 
+		ClrHome
+		Disp "THERE ARE RUMORS
+		Disp "THAT HE HAS ONE
+		Disp "OF THE CRYSTALS.
+		Pause 
+		Goto Q
+	End
+	If K=10
+	Then
+		Disp "EMPEROR:PLEASE
+		Disp "FIND MY SON
+		Goto Q
+	End 
+End
+Pause 
+Lbl A
+If K=13
+Then
+	prgmAUX4
+	Goto Q
+End
+If K=15
+Then
+	ClrHome
+	Disp "SHINTO:YOU HAVE
+	Disp "MADE IT VERY FAR
+	Disp "BUT NOW, MY
+	Disp "SERVANTS AND I 
+	Disp "WILL DEFEAT YOU
+	Pause 
+	ClrHome
+	Disp "KOTEN ENTERED 
+	Disp "THE HALL OF
+	Disp "DRAGONS.
+	Pause 
+	For(D,1,4,1
+		5->O
+		prgmAUX3
+		If H<0 
+		Goto Q
+		6->O
+		prgmAUX3
+	End
+	If (K=10) and (F=2)
+	Disp "EMPEROR:KOTEN
+	Disp "I AM VERY HAPPY
+	Disp "WITH YOU.
+	Pause 
+	ClrHome
+	Disp "YOU HAVE SHOWN
+	Disp "THAT YOU HAVE
+	Disp "SUFFECIENT POWER
+	Disp "TO DEFEAT THE 
+	Disp "EVIL ONE.
+	Pause 
+	ClrHome
+	Disp "PLEASE TAKE THIS
+	Disp "CRYSTAL AND
+	Disp "MAGIC CARPET.
+	Disp "YOU CAN NOW GO
+	Disp "WHEREVER YOU
+	Disp "WISH TO GO.
+	Pause 
+	ClrHome
+	Disp "KOTEN:WE WILL
+	Disp "NOT FAIL YOU.
+	Pause 
+	ClrHome
+	3->F
+	3->N
+	Disp "POY:I''LL GO TOO!"
+	Disp "KOTEN:HMMMM..."
+	Disp "MIKO:WELCOME
+	Disp "BACK POY!
+	Pause 
+	Disp "POY REJOINS!"
+End
+ClrHome
+Menu("IN THE TOWN","BUY WEAPON",N,"BUY ARMOR",O,"BUY ITEM",P,"TALK TO PEOPLE",R,"GO TO INN",I,"LEAVE",Q)
+Lbl I
+ClrHome
+Disp "INN GUY:WELCOME"
+Disp "TO THE HOTEL."
+Disp "THE COST IS"
+Output(3,13,K*10)
+Pause 
+If E>=(K*10)
+Then
+	Menu("AT THE INN","STAY",3,"LEAVE",A)
+Else
+	Goto Z
+	Lbl 3
+	ClrHome
+	Disp "KOTEN SETTLED"
+	Disp "IN FOR THE NIGHT"
+	For(A,1,100,1
+		Horizontal (100-A)
+	End
+	R->H
+	E-(10*K)->E
+	S->M
+	Pause 
+	ClrHome
+	If K=7
+	Then
+		ClrDraw
+		Disp "THAT NIGHT KOTEN"
+		Disp "HAD A DREAM..."
+		Pause 
+		ClrHome
+		Disp "KOTEN HEARD "
+		Disp "HIMOKO CALLING"
+		Disp "HIM FROM FAR "
+		Disp "AWAY"
+		Pause 
+		ClrHome
+		Disp "KOTEN, PLEASE"
+		Disp "HELP ME"
+		Pause 
+		RecallPic Pic3
+		prgmAUX1
+		ClrHome
+		Disp "FIND THE THREE"
+		Disp "CRYSTALS. IT IS"
+		Disp "THE ONLY WAY TO"
+		Disp "STOP HIM."
+		Pause 
+		ClrHome
+		Disp "AS KOTEN "
+		Disp "WATCHED, THE "
+		Disp "PRINCESS STARTED"
+		Disp "TO CRY..."
+		Pause 
+		RecallPic Pic3
+		For(Y,0,10,2)
+			For(X,1,2,1)
+				Pt-Change(62,66-Y)
+				Pt-Change(61,66-Y-1)
+				Pt-Change(63,66-Y-1)
+				Pt-Change(60,64-Y)
+				Pt-Change(64,64-Y)
+				Pt-Change(61,63-Y)
+				Pt-Change(63,63-Y)
+				Pt-Change(62,63-Y)
+				1->A
+				While A<50
+					A+1->A
+				End
+			End
+		End
+	End
+	Disp "KOTEN AWOKE,"
+	Disp "INVIGORATED."
+	Pause 
+	If K=1
+	Goto S
+	Goto A
+	Lbl N
+	Menu("BUY A WEAPON","CLAWS     100",1,"ESCRIMA   150",2,"SAI       250",3,"KAMA      400",6,"KATANA  700",7,"EXIT",A)
+	Lbl 1
+	If E<=99
+	Goto Z
+	P-3W->P
+	1->W
+	E-100->E
+	Goto K
+	Lbl 2
+	If E<=149
+	Goto Z
+	P-3W->P
+	E-150->E
+	1.5->W
+	Goto K
+	Lbl 3
+	If E<=249
+	Goto Z
+	P-3W->P
+	3->W
+	E-250->E
+	Goto K
+	Lbl 6
+	If E<400
+	Goto Z
+	P-3W->P
+	4->W
+	E-400->E
+	Goto K
+	Lbl 7
+	If E<700
+	Goto Z
+	P-3W->P
+	5->W
+	E-700->E
+	Lbl K
+	ClrHome
+	Disp "THE NEW WEAPON"
+	Disp "SUITS KOTEN WELL"
+	Pause 
+	P+3W->P
+	Goto A
+	Lbl R
+	10rand->A
+	If K<8
+	Then
+		If A<3 Then
+			Disp "MAN:THE INN IN
+			Disp "YOKO HAS SPECIAL
+			Disp "PROPERTIES.
+		End
+		If (A>3) and (A<7)
+		Then
+			Disp "WOMAN:WAIT UNTIL
+			Disp "YOU ARE STRONG
+			Disp "BEFORE GOING 
+			Disp "NORTH.
+		End
+		If A>7
+		Then
+			Disp "BOY:A QUEST?
+			Disp "TAKE ME,
+			Pause 
+			Disp "PLEEEEEEEEEEASE??
+			Pause 
+			Disp "MOM:YOU ARE
+			Disp "ONLY SEVEN. GO
+			Disp "TAKE A BATH.
+		End
+	Else
+		If A<2
+		Then
+			Disp "ELDER:THE GRAVE
+			Disp "OF YOSHI HAS A
+			Disp "FALSE WALL.
+		End
+		If (A>2) and (A<7)
+		Then
+			Disp "DRUNK MAN:
+			Disp "REMEMBER THIS:
+			Pause 
+			Disp "YELLOW MONKEYS
+			Disp "SQUEEZE THE BEST
+			Disp "APPLES.
+			Pause 
+			Disp "HICCUP
+			Pause 
+			ClrHome
+			Disp "IF YOU DON''T
+			Disp "THEN ITS HICCUP
+			Pause 
+			Disp "GAME OVER, MAN.
+		End
+		If A>7
+		Then
+			Disp "GIRL:I HEARD
+			Disp "THAT YOSHI HAD
+			Disp "A CRYSTAL.
+		End
+	End
+	Pause 
+	ClrHome
+	Goto A
+	Lbl P
+	Menu("CHOOSE ITEMS","HERB      20",U,"SMOKEBOMB 25",V,"10 STARS 100",W,"ELIXIR  50", H,"NIKE TABI 400",J,"NINJA LNTRN200",L,"EXIT",A)
+	Lbl L
+	If E<200
+	Goto Z
+	E-200->E
+	1->L5(63)
+	Goto A
+	Lbl H
+	If E<50 
+	Goto Z
+	G+1->G
+	E-50->E
+	Goto A
+	Lbl J
+	If E<400
+	Z
+	15->T
+	E-400->E
+	Goto A
+	Lbl U
+	If E>=20
+	Then
+		E-20->E
+		I+1->I
+	Else
+		Goto Z
+	End
+	Goto A
+	Lbl V
+	If E>=25
+	Then
+		E-25->E
+		J+1->J
+	Else
+		Goto Z
+	End
+	Goto A
+	Lbl W
+	If E>=100
+	Then
+		E-100->E
+		U+10->U
+	Else
+		Goto Z
+	End
+	Goto A
+	
+	Lbl O
+	Menu("BUY ARMOR","TRAIN  ST 100",B,"FIGHT  ST 200",C,"NINJA  AR 300",D,"WARRIO AR 400",E,"DRAGON AR 500",F,"EXIT",A)
+	Lbl B
+	If E<=99
+	Goto Z
+	Q-3theta->Q
+	1->theta
+	E-100->E
+	Goto 8
+	Lbl C
+	If E<=149
+	Goto Z
+	Q-3theta->Q
+	E-150->E
+	1.5->theta
+	Goto 8
+	Lbl D
+	If E<=249
+	Goto Z
+	Q-3theta->Q
+	3->theta
+	E-250->E
+	Goto 8
+	Lbl E
+	If E<400
+	Goto Z
+	Q-3theta->Q
+	4->theta
+	E-400->E
+	Goto 8
+	Lbl F
+	If E<700
+	Goto Z
+	Q-3theta->Q
+	5->theta
+	E-700->E
+	Lbl 8
+	Disp "KOTEN DONNS THE
+	Disp "IMPRESSIVE PIECE
+	Disp "OF ARMOR.
+	Q+3theta->Q
+	Pause 
+	ClrHome
+	Goto A
+	Lbl S
+	Menu("AT HOME","GET SUPLIES",T,"SLEEP",3,"LEAVE",Q)
+	Lbl T
+	ClrHome
+	If L4(15)!=1
+	Then
+		Disp "KOTEN GRABBED "
+		Disp "TRUSTY STAFF"
+		Disp "AND TRAVELING "
+		Disp "CLOTHES."
+		Pause 
+		ClrHome
+		Disp "RUMMAGING"
+		Disp "THROUGH HIS "
+		Disp "BELONGINGS HE"
+		Disp "ALSO FOUND:"
+		Disp "2 HERBS"
+		Disp "1 ELIXIR"
+		Disp "34 GOLD"
+		34+E->E
+		Pause 
+		2+I->I
+		G+1->G
+		If W<1
+		Then
+			P+2->P
+			.75->W
+		End
+		If theta<1
+		Then
+			Q+2->Q
+			1->theta
+		End
+		1->L4(15)
+	Else
+		Disp "KOTEN DOES NOT"
+		Disp "HAVE ANYTHING"
+		Disp "ELSE."
+		Pause 
+	End
+	Goto S
+	Lbl Z
+	ClrHome
+	Disp "THIS IS NOT A"
+	Disp "CHARITY HERE"
+	Disp "YOU NEED MORE"
+	Disp "GOLD"
+	Pause 
+	Goto A
+	Lbl M
+	ClrHome
+	Disp "KOTEN: I HAVE"
+	Disp "COME FOR THE"
+	Disp "CRYSTAL."
+	Pause 
+	Disp "MONSTER: THERE "
+	Disp "NO CRYSTAL HERE."
+	Pause 
+	Disp "KOTEN: I WILL "
+	Disp "FIGHT YOUFOR IT"
+	Pause 
+	For(O,1,5,1)
+		ClrHome
+		Disp "KOTEN ATTACKS"
+		Disp "14 DAMAGE"
+		Pause 
+		Disp "MONSTER CASTS"
+		Disp "HEAL"
+		Pause 
+	End
+	ClrHome
+	Disp "MONSTER: PLEASE"
+	Disp "STOP. I AM NOT"
+	Disp "THE MONSTER YOU"
+	Disp "ARE LOOKING FOR."
+	Pause 
+	ClrHome
+	Disp "HE WAS DEFEATED"
+	Disp "BY A GREAT NINJA"
+	Disp "YOSHI, 15 YEARS"
+	Disp "AGO."
+	Pause 
+	ClrHome
+	Disp "KOTEN: YOSHI???"
+	Disp "I AM SORRY"
+	Disp "I ATTACKED YOU."
+	Disp "I MUST FIND THIS"
+	Disp "YOSHI."
+	Pause 
+	ClrHome
+	Disp "MONSTER: I WISH"
+	Disp "TO SEE THE GREAT"
+	Disp "YOSHI AGAIN."
+	Disp "MY NAME IS MIKO,"
+	Disp "DO YOU WANT ME?"
+	Menu("TAKE MIKO","YES",4,"NO",5)
+	Lbl 4
+	1->N
+	Disp "MIKO: THANKS"
+	Disp "MIKO JOINS
+	Goto Q
+	Lbl 5
+	ClrHome
+	Disp "MIKO:YOU NEED
+	Disp "ME.
+	Pause 
+	Goto 4
+	Lbl Q
+	ClrDraw
+	If K=5
+	Then
+		Disp "KOTEN SET OUT
+		Disp "FOR TOKAI
+		4->Y
+	End
+	If (K=2) or (K=3)
+	Disp "HOUSE OF KOTEN.1"
+	If (K=2) or (K=4) or (K=6)
+	Disp "YOKO...........7"
+	If K=4
+	Disp "MONSTER HOUSE..5"
+	If (K=2) or (K=1) or (K=4) or (K=6) or (K=7) or (K=5) or (K=3)
+	Then
+		If K!=5
+		Then
+			Disp "EDO............3"
+			If (K!=4)
+			Disp "TOKAI..........4"
+			If (K!=6)
+			Disp "HOUSE OF ELDER.6"
+		End
+	End
+	If (K>7) and (K<=14)
+	Then
+		If K!=8
+		Disp "KENTO...........8"
+		If K!=9
+		Disp "MIKAMI.........9"
+		If K!=10
+		Disp "N. PALACE.....10"
+		If K!=11
+		Disp "KODO..........11"
+		If K!=12
+		Disp "YASHIKI.......12"
+		If K!=13
+		Disp "BARRIER POINT.13"
+		If K!=14
+		Disp "GRAVE OF"
+		Disp "YOSHI.........14"
+	End
+	If K=8
+	Disp "YOKO...........7"
+	If K=7
+	Disp "KENTO..........8"
+	Input Y
+	If K=1
+	Then
+		If (Y=3)
+		56->D
+		If Y=4
+		178->D
+		If Y=6
+		164->D
+		If Y=7
+		354->D
+	End
+	If (K=2) or (K=3)
+	Then
+		If Y=1
+		56->D
+		If Y=4
+		140->D
+		If Y=6
+		78->D
+		If Y=7
+		270->D
+	End
+	If (K=4)
+	Then
+		If Y=7
+		158->D
+		If Y=1
+		178->D
+		If Y=3
+		140->D
+		If Y=5
+		12->D
+		If Y=6
+		100->D
+	End
+	If K=5
+	12->D
+	If K=6
+	Then
+		If Y=4
+		100->D
+		If Y=3
+		78->D
+		If Y=1
+		164->D
+		If Y=7
+		124->D
+	End
+	If K=7
+	Then
+		If Y=1
+		354->D
+		If Y=6
+		124->D
+		If Y=4
+		158->D
+		If Y=3
+		270->D
+		If Y=8
+		150->D
+	End
+	If (K=8) or (K=9)
+	Then
+		If Y=7
+		150->D
+		If Y=9
+		17->D
+		If (Y=10) or (Y=11)
+		37->D
+	End
+	If (K=10) or (K=11)
+	Then
+		If (Y=10) or (Y=11)
+		2->D
+		If (Y=9) or (Y=8)
+		37->D
+		If Y=12
+		157->D
+		If (Y=13) or (Y=14)
+		167->D
+	End
+	If K=12
+	Then
+		If (11-Y)<=3
+		169->D
+		If (Y=13) or (Y=14)
+		53->D
+	End
+	If (K=13) or (K=14)
+	Then
+		If Y=12
+		53->D
+		If (11-Y)<=3
+		167->D
+	End
+	If D<=0
+	Then
+		ClrHome
+		Disp "KOTEN CAN NOT "
+		Disp "GO THERE."
+		Goto Q
+	End
+	ClrHome
+	If F=3
+	0->D
+	Disp "MILES TO TRAVEL=
+	Disp D
+	Pause 
+	If (K=7) and (N<2) and (Y=8)
+	Then
+		ClrHome
+		Disp "KOTEN: MY WALLET
+		Disp "IT IS GONE
+		Pause 
+		Disp "BOY: HA HA HA HA"
+		Pause 
+		Disp "KOTEN: WHAT?"
+		Pause 
+		Disp "BOY: NOTHING."
+		Pause 
+		ClrHome
+		Disp "AS THE BOY "
+		Disp "STARTED TO RUN"
+		Disp "AWAY, KOTEN"
+		Disp "GRABBED HIM BY"
+		Disp "THE HAIR."
+		Pause 
+		ClrHome
+		Disp "KOTEN: GIVE IT"
+		Disp "BACK."
+		Pause 
+		ClrHome
+		Disp "GRUDGINGLY, THE"
+		Disp "BOY GAVE IT BACK"
+		Pause 
+		Disp "KOTEN: I WILL"
+		Disp "HAVE TO REPORT"
+		Disp "THIS."
+		Pause 
+		ClrHome
+		Disp "BOY: NO, PLEASE"
+		Pause 
+		ClrHome
+		Disp "BOY: MY NAME IS"
+		Disp "POY. MY MOTHER "
+		Disp "IS VERY SICK, SO"
+		Disp "I CAME HERE TO"
+		Disp "BUY A MEDICINE."
+		Disp "I NEED ABOUT"
+		Output(6,14,E)
+		Disp "GOLD TO GO BACK"
+		Pause 
+		ClrHome
+		Disp "TO KENTO, MY "
+		Disp "VILLAGE."
+		Pause 
+		Disp "MIKO: WE ARE "
+		Disp "TRAVELING THERE."
+		Pause 
+		Menu("TAKE POY?","YES",Y,"NO",N)
+		Lbl Y
+		2->N
+		ClrHome
+		Disp "KOTEN: OK."
+		Disp "POY: YOU WILL "
+		Disp "NOT REGRET IT."
+		Goto 9
+		Lbl N
+		Disp "POY RAN AWAY."
+		Pause 
+	End
+	If (K=10) and (N<3)
+	Then
+		ClrHome
+		Disp "AS KOTEN WAS"
+		Disp "LEAVING THE TOWN"
+		Disp "HE SAW A MAN"
+		Disp "LEANING ON A "
+		Disp "POST."
+		Pause 
+		ClrHome
+		Disp "MAN: I HEAR YOU"
+		Disp "ARE THE ONE WITH"
+		Disp "THE BIRTHMARK OF"
+		Disp "THE 3 CRYSTALS?"
+		Pause 
+		Disp "KOTEN: I AM."
+		Pause 
+		ClrHome
+		Disp "MAN: IT IS A "
+		Disp "MARK OF GREAT"
+		Disp "POWER."
+		Pause 
+		Disp "KOTEN: I KNOW."
+		Pause 
+		ClrHome
+		Disp "MAN: I HAVE SEEN"
+		Disp "IT ON ONLY ONE"
+		Disp "OTHER."
+		Disp "HER NAME WAS"
+		Disp "YOSHI."
+		Pause 
+		ClrHome
+		Disp "KOTEN: YOSHI?"
+		Pause 
+		Disp "MAN: YES.BUT SHE
+		Disp "HAD ONLY ONE
+		Disp "CRYSTAL. I SEE
+		Disp "IN YOUR EYES
+		Disp "THAT YOU ARE
+		Disp "HEADED INTO
+		Disp "PERIL. WHERE TO?
+		Pause 
+		ClrHome
+		Disp "KOTEN: THE
+		Disp "FORBIDDEN LAND.
+		Pause 
+		Disp "MAN: LET ME GO 
+		Disp "WITH YOU. I WISH
+		Disp "TO MAKE IT PART
+		Disp "OF MY FATHERS
+		Disp "KINGDOM.
+		Pause 
+		ClrHome
+		Disp "KOTEN: YOUR"
+		Disp "FATHER?"
+		Disp "MAN: ALLOW ME TO"
+		Disp "INTRODUCE MYSELF"
+		Disp "I AM ASHIDA. MY"
+		Disp "FATHER IS THE"
+		Disp "EMPEROR HERE."
+		Disp "TAKE ME WITH YOU"
+		Pause 
+		ClrHome
+		Disp "ASHIDA JOINS
+		If N=1
+		3.1->N
+		If N=0
+		3.2->N
+	End
+	Lbl 9
+	If ((N=2) or (N=2.1)) and (K=8)
+	Then
+		If N=2.1
+		0->N
+		If N=2
+		1->N
+		ClrHome
+		Disp "KOTEN:POY???
+		Pause 
+		ClrHome
+		Disp "NO ANSWER
+		Pause 
+		ClrHome
+		Disp "KOTEN REACHED
+		Disp "INTO HIS POCKET
+		Disp "KOTEN:MY MONEY 
+		Disp "IS GONE. THERE
+		Disp "IS JUST A NOTE.
+		Pause 
+		ClrHome
+		Disp "KOTEN,
+		Disp "I AM SORRY I
+		Disp "TOOK YOUR MONEY.
+		Disp "TAKE THIS 
+		Disp "CRYSTAL TO MAKE
+		Disp "UP FOR IT.
+		Disp "         POY.
+		Pause 
+		0->E
+		F+1->F
+	End
+	Y-.25->K

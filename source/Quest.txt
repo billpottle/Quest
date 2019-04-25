@@ -1,0 +1,322 @@
+ClrHome
+PlotsOff 
+ClrDraw
+Fix 0
+FnOff 
+GridOff
+AxesOff
+LabelOff
+0->Xmin
+0->Ymin
+100->Xmax
+100->Ymax
+Disp "WELCOME TO..."
+prgmAUX1
+ClrDraw
+RecallPic Pic1
+72->X
+58->I
+While I>53
+	Pt-Off(X,I)
+	I-1->I
+End
+While I>10
+	Pt-On(X,I+5)
+	Pt-Off(X,I)
+	I-1->I
+End
+Pt-Change(71,14)
+Pt-Change(71,12)
+Pt-Change(73,12)
+Pt-Change(73,14)
+Pt-Change(70,15)
+Pt-Change(70,11)
+Pt-Change(74,11)
+Pt-Change(74,15)
+Pt-Change(69,16)
+Pt-Change(69,10)
+Pt-Change(74,15)
+Pt-Change(73,12)
+prgmAUX1
+ClrHome
+Disp "     QUEST"
+Disp "COPYRIGHT, 1995"
+Disp "   WRITTEN BY"
+Disp "BILLY POTTLE AND"
+Disp " PAUL BUCHANAN"
+Disp " ILLUSTRATED BY"
+Disp "CHARLES DEGUZMAN"
+Pause 
+Lbl 7
+Menu("QUEST","OLD GAME",2,"NEW GAME",1)
+Lbl 1
+ClrHome
+Disp "IN THE FOREST"
+Disp "NEAR THE PALACE"
+Disp "OF THE EMPEROR"
+Disp "KOTAN HEARD THE"
+Disp "SCREAM OF HIMOKO"
+Pause 
+ClrHome
+Disp "WEAPONLESS AND"
+Disp "PENNILESS, HE"
+Disp "HURRIED TO SEE"
+Disp "THE EMPEROR"
+Pause 
+1.75->K
+1->L
+20->H
+7->P
+4->Q
+6->T
+0->W
+0->G
+0->M
+0->N
+15->D
+.1->C
+20->R
+0->S
+10->B
+0->V
+0->theta
+0->I
+0->U
+0->J
+0->ZTmin
+0->ZTmax
+0->E
+0->F
+Goto Q
+Lbl 2
+L5(44)->H
+L5(45)->M
+L5(46)->L
+L5(47)->E
+L5(48)->P
+L5(49)->Q
+L5(50)->D
+L5(51)->C
+L5(52)->R
+L5(53)->S
+L5(54)->K
+L5(55)->V
+L5(56)->F
+L5(57)->T
+L5(58)->N
+L5(59)->I
+L5(60)->U
+L5(61)->J
+L5(62)->G
+L5(63)->theta
+L5(64)->W
+L5(65)->ZTmin
+L5(66)->ZTmax
+Lbl Q
+While (H>0) and (D>=0) and (C>=0)
+	10rand->A
+	If A<3
+	prgmAUX3
+	Menu("IN THE FIELD","TRAVEL ONWARD",A,"TRAVEL BACK",B,"VIEW STATS",C,"ITEM",D,"VIEW MAP",E,"QUIT",Z,"SAVE",K)
+	Lbl B
+	L4(12)-.25->B
+	K+.25->L4(12)
+	B->K
+	C->B
+	D->C
+	B->D
+	Lbl A
+	ClrHome
+	4+Trand->A
+	Disp "MILES TRAVELED= ",A
+	D-A->D
+	C+A->C
+	
+	Disp " MILES LEFT TO  "
+	Disp "NEXT LANDMARK=",D
+	Disp "MILES FROM LAST=",C
+	Pause 
+	Goto Q
+	Lbl C
+	ClrHome
+	Disp "LEVEL"
+	Output(1,7,L)
+	Disp "HP"
+	Output(2,5,H)
+	Output(2,8,"/")
+	Output(2,9,R)
+	Disp "MP"
+	Output(3,5,M)
+	Output(3,8,"/")
+	Output(3,9,S)
+	Disp "ATTACK"
+	Output(4,8,P)
+	Disp "DEFENSIVE"
+	Output(5,11,Q)
+	Disp "GOLD"
+	Output(6,6,E)
+	Disp "EXPERIENCE"
+	Output(7,12,V)
+	Pause 
+	ClrHome
+	Disp "WEAPON:
+	If W=0
+	Output(1,8,"NONE"
+	If W=.75
+	Output(1,8,"STAFF"
+	If W=1
+	Output(1,8,"CLAWS"
+	If W=1.5
+	Output(1,8,"ESCRIMA"
+	If W=3
+	Output(1,8,"SAI"
+	If W=4
+	Output(1,8,"KAMA"
+	If W=5
+	Output(1,8,"KATANA"
+	If W=6
+	Disp "SWORD OF UKYO
+	Disp "ARMOR:
+	If theta=0
+	Output(2,8,"NONE"
+	If theta=1
+	Disp "TRAVEL CLOTHES
+	:If theta=1.5
+	Disp "TRAINING SUIT
+	:If theta=3
+	Disp "NINJA ARMOR
+	:If theta=2
+	Disp "FIGHTING SUIT
+	:If theta=4
+	Disp "WARRIOR ARMOR
+	:If theta=1
+	Disp "DRAGON ARMOR
+	If T=15
+	Disp "NIKE SHOES
+	If ZTmin=1
+	Disp "NINJA LIGHT
+	If F=3
+	Disp "MAGIC CARPET
+	Pause 
+	:ClrDraw
+	Text(7,30,"CRYSTALS"
+	If F>=1
+	Then
+		Line(40,40,50,60)
+		Line(50,60,60,40)
+		Line(60,40,50,30)
+		Line(50,30,40,40)
+		If F>=2
+		Then
+			Line(40,40,30,30)
+			Line(30,30,40,20)
+			Line(40,20,50,30)
+			If F=3
+			Then
+				Line(50,30,60,20)
+				Line(60,20,70,30)
+				Line(70,30,60,40)
+			End
+		End
+	End
+	Pause 
+	Goto Q
+	Lbl D
+	ClrHome
+	Disp "0 NONE
+	If I>0
+	Then
+		Disp "1 HERBS"
+		Output(1,9,I)
+	End
+	If U>0
+	Then
+		Disp "2 SHURIKEN"
+		Output(2,12,U)
+	End
+	If J>0
+	Then
+		Disp "3 SMOKE BOMBS"
+		If U>=1
+		Then
+			Output(3,14,J)
+		Else
+			Output(2,14,J)
+		End
+	End
+	Input X
+	If X=1 and I>0
+	Then
+		I-1->I
+		H+40->H
+		If H>R
+		R->H
+	Else
+		If X=0
+		Goto Q
+		Disp "YOU CANT USE"
+		Disp "THAT HERE"
+		Pause 
+	End
+	Goto Q
+	Lbl E
+	ClrDraw
+	RecallPic Pic2
+	Pause 
+	Goto Q
+End
+If H<=0
+Then
+	Goto Z
+Else
+	prgmAUX2
+	.1->C
+	Goto Q
+	Lbl K
+	H->L5(44)
+	M->L5(45)
+	L->L5(46)
+	E->L5(47)
+	P->L5(48)
+	Q->L5(49)
+	D->L5(50)
+	C->L5(51)
+	R->L5(52)
+	S->L5(53)
+	K->L5(54)
+	V->L5(55)
+	F->L5(56)
+	T->L5(57)
+	N->L5(58)
+	I->L5(59)
+	U->L5(60)
+	J->L5(61)
+	G->L5(62)
+	theta->L5(63)
+	W->L5(64)
+	ZTmin->L5(65)
+	ZTmax->L5(66)
+	Goto Q
+	Lbl Z
+	If H<0
+	Then
+		ClrHome
+		Disp "KOTEN SCREAMS IN
+		Disp "ANGUISH...
+		PrintScreen
+		For(X,1,100,1)
+			Vertical X
+		End
+		ClrHome
+		Disp "THE LAUGH OF
+		Disp "SHINTO ROLLS
+		Disp "OVER THE HILLS
+		Pause 
+		ClrHome
+		Output(4,4,"GAME OVER"
+	End
+	AxesOn
+	LabelOn
+	ZStandard
+	Float
+	PlotsOn 

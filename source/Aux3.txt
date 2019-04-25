@@ -1,0 +1,592 @@
+10rand->A
+If K=15
+Goto 3
+If K<7
+Then
+	If A<7
+	Then
+		0->O
+	Else
+		If A<9
+		Then
+			1->O
+		Else
+			2->O
+		End
+	End
+End
+If (K>=7) and (K<10)
+Then
+	If A<1
+	0->O
+	If (A<3) and (A>=1)
+	1->O
+	If (A<6) and (A>=3)
+	2->O
+	If (A<8) and (A>=6)
+	3->O
+	If (A<10) and (A>=8)
+	4->O
+End
+If (K>10) and (K<15)
+Then
+	If A<2
+	Then
+		2->O
+	Else
+		If A<5
+		Then
+			3->O
+		Else
+			If A<7
+			Then
+				4->O
+			Else
+				5->O
+			End
+		End
+	End
+End
+Lbl 3
+ClrHome
+Output(4,5,"A")
+If O=0
+Output(4,7,"RAVEN")
+If O=1
+Output(4,7,"RONIN")
+If O=2
+Output(4,7," SAMURAI")
+If O=3
+Output(4,7,"JOKER"
+If O=4
+Output(4,7,"MONK"
+If O=5
+Output(4,6,"N OROCHI"
+If O=6
+Output(4,7,"SHINTO"
+Output(5,5,"APPEARS")
+Pause 
+While 0<1
+	Lbl theta
+	If (H<0) or (L5(6O+1)<1)
+	Goto J
+	If (O=6) and (L5(6O+1)<500)
+	Then
+		ClrHome
+		Disp "SHINTO FIGHTS
+		Disp "IN HIS TRUE
+		Disp "FORM
+		Pause 
+		RecallPic Pic5
+		Pause 
+	End
+	
+	0->Y
+	0->ZnMin
+	Menu("UNDER ATACK","FIGHT",A,"SPELL",B,"SPECIAL FRIEND",C,"ITEM",D,"RUN",E)
+	Lbl A
+	If X!=20
+	Prand-L5(6O+3)->X
+	If X!=0
+	Then
+		If X<0
+		~X->X
+		ClrHome
+		Output(4,5,"HIT"
+		Output(5,5,X)
+		Output(6,3,"DAMAGE")
+		Pause 
+		ClrHome
+		L5(6O+1)-X->L5(6O+1)
+	Else
+		ClrHome
+		Output(4,7,"MISS")
+		Pause 
+	End
+	Goto L
+	Lbl B
+	ClrHome
+	If (M>=3) and (L>1)
+	Disp "1 DRAGONFLAME 3"
+	If (M>=5) and (L>2)
+	Disp "2 HEAL 5"
+	If (M>=5) and (L>3)
+	Disp "3 SUB ZERO 5"
+	If (M>=5) and (L>4)
+	Disp "4 LIGHTENING 7"
+	If (M>=20) and (L>5)
+	Disp "5 SUNFIRE 20"
+	If (M>=25) and (L>6)
+	Then
+		Pause 
+		Disp "6 ABSOLUTE 0 25"
+	End
+	If (M>25) and (L>7)
+	Disp "7 RAYDEN 25"
+	If (M>=35) and (L>8)
+	Disp "8 RECOVER 35"
+	If (M>=30) and (L>9)
+	Disp "9 FURY 30"
+	If (M>=50) and (L>10)
+	Disp "10 DRGN SPIRT 50"
+	Input X
+	If (X=0) or (M<3)
+	Goto theta
+	ClrHome
+	0->B
+	Disp "DRAWING THE"
+	Disp "MYSTICAL POWER"
+	Disp "FROM AROUND HIM,"
+	Disp "KOTAN CASTS"
+	If (X=1) and (M>2) and (L>1)
+	Then
+		Disp "DRAGONFLAME"
+		M-3->M
+		10+5rand->B
+	End
+	If (X=2) and (M>=5) and (L>2)
+	Then
+		Disp "HEAL"
+		Goto 9
+	End
+	If (X=3) and (M>=5) and (L>3)
+	Then
+		Disp "SUB ZERO"
+		M-5->M
+		20+10rand->B
+	End
+	If (X=4) and (M>=7) and (L>4)
+	Then
+		M-7->M
+		Lbl S
+		Disp "LIGHTNING"
+		25+10rand->B
+	End
+	If (X=5) and (M>=20) and (L>5)
+	Then
+		M-20->M
+		Lbl T
+		40+10rand->B
+		Disp "SUNFIRE"
+	End
+	If (X=6) and (M>=25) and (L>6)
+	Then
+		M-25->M
+		Disp "ABSOLUTE 0"
+		100+20rand->B
+	End
+	If (X=7) and (M>=25) and (L>7)
+	Then
+		100+20rand->B
+		M-25->M
+		Disp "RAYDEN"
+	End
+	If (X=8) and (M>=35) and (L>8)
+	Then
+		M-35->M
+		Disp "RECOVER"
+		Goto 9
+	End
+	If (X=9) and (M>=30) and (L>9) and (N=3) and (ZnMin=0)
+	Then
+		M-30->M
+		Disp "FURY
+		9->ZnMin
+		Pause 
+		ClrHome
+		Goto C
+	End
+	If (X=10) and (M>=50) and (L>10)
+	Then
+		M-50->M
+		Lbl R
+		Disp "DRAGON SPIRIT"
+		If (O!=6)
+		Then
+			Pause 
+			Disp "THE SPIRIT OF"
+			Disp "SUDDEN DEATH "
+			Disp "FLOWS  INTO "
+			Disp "THE ENEMY"
+			Pause 
+			0->L5(6O+1)
+		Else
+			Disp "SHINTO LAUGHS
+			Disp "AT THE FUTILE
+			Disp "ATTEMPT TO 
+			Disp "DESTROY HIM
+		End
+	End
+	Pause 
+	ClrHome
+	Output(3,2,B)
+	Output(3,5,"DAMAGE")
+	L5(6O+1)-B->L5(6O+1)
+	Pause 
+	If B=0
+	Then
+		ClrHome
+		Disp "THE SPELL FALLS"
+		Disp "APART BEFORE"
+		Disp "KOTEN CAN FINISH"
+	End
+	Goto L
+	Lbl 9
+	ClrHome
+	Disp "THE HEALING "
+	Disp "POWERS OF THE"
+	Disp "SPELL COURSE"
+	Disp "THROUGH KOTEN"
+	If X=2
+	25->A
+	If (X=8) or ((H+A)>R)
+	R-H->A
+	Pause 
+	Disp "HP INCREASED BY"
+	Output(6,8,A)
+	Pause 
+	H+A->H
+	Goto L
+	Lbl C
+	ClrHome
+	If ZnMin=9
+	Goto M
+	Disp "0 NONE"
+	If (N=1) or (N=2) or (N=3) or (N=3.1)
+	Disp "1 MIKO"
+	If (N=2) or (N=2.1) or (N=3)
+	Disp "2 POY"
+	If (N>=3)
+	Disp "3 ASHIDA"
+	Input X
+	Lbl M
+	If (X=1) and ((N=1) or (N=2) or (N=3) or (N=3.1)) or (ZnMin=9)
+	Then
+		Disp "HEALAMONSTER"
+		Disp "CASTS HEAL"
+		H+20->H
+		If H>R
+		R->H
+		Pause 
+	End
+	If (X=2) and ((N=2) or (N=2.1) or (N=3)) or (ZnMin=9)
+	Then
+		ClrHome
+		Disp "POY STEALS..."
+		L5(6O+6)rand->A
+		Disp A
+		Output(2,4,"GOLD")
+		Pause 
+		E+A->E
+	End
+	If (X=3) and (N>=3) or (ZnMin=9)
+	Then
+		ClrHome
+		Disp "USING THE SECRET"
+		Disp "SPELLS OF HIS"
+		Disp "ANCESTORS,"
+		Disp "ASHIDA CASTS"
+		10rand->A
+		If A<5
+		Goto S
+		If (A>=5) and (A<=9)
+		Goto T
+		If (A>9)
+		Goto R
+	End
+	Lbl L
+	ClrHome
+	Output(2,3,"YOUR HP")
+	Output(3,3,H)
+	Output(5,3,"ENEMY HP")
+	Output(6,3,L5(6O+1)
+	Pause 
+	Goto U
+	Lbl D
+	ClrHome
+	Disp "O NONE
+	If I>0
+	Then
+		Disp "1 HERBS"
+		Output(1,9,I)
+	End
+	If U>0
+	Then
+		Disp "2 STARS"
+		Output(2,9,U)
+	End
+	If J>0
+	Then
+		Disp "3 NINJA SMOKE"
+		Output(3,15,J)
+	End
+	Input X
+	If (X=1) and (I>=1)
+	Then
+		H+30->H
+		If H>R
+		R->H
+		I-1->I
+		Goto L
+	End
+	If (X=2) and (U>=1)
+	Then
+		20->X
+		50->B
+		For(X,20,90,10)
+			ClrDraw
+			Circle(X,B,3)
+			If (X=30) or (X=50) or (X=70)
+			Then
+				Line(X-10,B-10,X-10,B+10)
+				Line(X-10,B+10,X+10,B+10)
+				Line(X+10,B+10,X+10,B-10)
+				Line(X+10,B-10,X-10,B-10)
+			Else
+				Line(X-20,B,X,B+20)
+				Line(X,B+20,X+20,B)
+				Line(X+20,B,X,B-20)
+				Line(X,B-20,X-20,B)
+			End
+			0->A
+			While A<20
+				A+1->A
+			End
+		End
+		20->X
+		U-1->U
+		Goto A
+	End
+	If (X=3) and (J>=1)
+	Then
+		J-1->J
+		ClrDraw
+		For(A,1,20,1)
+			Circle(50,50,A)
+		End
+		Goto X
+	End
+	Goto theta
+	Lbl E
+	Trand->X
+	.25*L5(6O+1)rand->Y
+	If O>4
+	999->B
+	ClrHome
+	Disp "YOUR SPEED"
+	Disp "ENEMY SPEED"
+	Output(1,12,X)
+	Output(2,13,B)
+	Pause 
+	If X>=B
+	Then
+		Goto X
+	Else
+		Goto theta
+		Lbl U
+		If Y>0
+		Goto theta
+		1->Y
+		If O>=4
+		Then
+			ClrHome
+			10rand->A
+			If (L5(6O+1)<15) and (A<5)
+			Then
+				Disp "THE WOUNDED"
+				Disp "FIEND CASTS"
+				If O=4
+				Then
+					Disp "HEAL"
+					Disp "25 HP RECOVERED"
+					L5(6O+1)+25->L5(6O+1)
+				Else
+					Disp "RECOVER"
+					Disp "MAX HP"
+					L4(O+1)->L5(6O+1)
+					Pause 
+				End
+				Goto A
+			End
+			If O=4
+			Then
+				If A<2
+				Goto 8
+				Disp "EVIL MONK CASTS"
+				If A<5
+				Then
+					Disp "DRAGONFLAME"
+					10+5rand->X
+				Else
+					Disp "SUB ZERO"
+					20+10rand->X
+				End
+				Pause 
+				Goto 7
+			End
+			If O=5
+			Then
+				ClrHome
+				If A<5
+				Goto 8
+				Disp "IN THE GUTTERAL"
+				Disp "LANGUAGE OF THE"
+				Disp "ANCIENTS, THE"
+				If O=5
+				Disp "DRAGON CASTS
+				If O=6
+				Then
+					Disp "SUPREME EVIL ONE
+					Disp "CASTS
+				End
+				If A<8.5
+				Then
+					Disp "LIGHTNING"
+					25+10rand->X
+				Else
+					Disp "SUNFIRE"
+					40+10rand->X
+				End
+				Pause 
+				Goto 7
+			End
+		End
+		Lbl 8
+		L5(6O+3)rand-Qrand->X
+		If (O=3) and (A<5)
+		Then
+			ClrHome
+			Disp "THE JOKER PULLED
+			Disp "KOTENS PANTS
+			Disp "DOWN.
+			Pause 
+			ClrHome
+			Disp "WHEN KOTEN 
+			Disp "PULLED THEM UP
+			Disp "THE JOKER HIT
+			Disp "HIM ON THE NOSE.
+			Pause 
+			Disp "HARD.
+			3X->X
+		End
+		If (O=6) and (A<3) and (L5(37)<500)
+		Then
+			Disp "SHINTO HURLS
+			Disp "THE MOON AT KOTEN
+			Disp "WITH ALL HIS 
+			Disp "MIGHT
+			80+20rand->X
+		End
+		Pause 
+		ClrHome
+		Lbl 7
+		If X>0
+		Then
+			ClrHome
+			Output(4,3,"ENEMY HIT")
+			Output(5,3,X)
+			H-X->H
+			Pause 
+			ClrHome
+			Goto L
+		Else
+			ClrHome
+			Output(3,5,"ENEMY"
+			Output(4,4,"MISS")
+			Pause 
+			Goto theta
+			
+		End
+	End
+	Lbl J
+	L4(O+1)->L5(6O+1)
+	ClrHome
+	If H<0
+	Goto W
+	If (O=6)
+	Then
+		Disp "SHINTO SCREAMS
+		Disp "AS THE MORTAL
+		Disp "WOUND ENTERS
+		Disp "HIS BODY
+		Pause 
+		ClrHome
+		Disp "SHITNO:*theta?+
+		Disp "KOTEN, I WILL...
+		Disp "BE...BACK FOR...
+		Disp "...YOU, UGH...
+		Pause 
+	End
+	ClrHome
+	Output(4,5,"ENEMY"
+	Output(5,4,"VANQUISHED")
+	Pause 
+	ClrHome
+	Output(3,2,"YOU EARNED"
+	Output(4,5,L5(7O+5))
+	Output(5,2,"EXPERIENCE")
+	Output(6,5,L5(7O+6))
+	Output(7,3,"GOLD")
+	E+L5(7O+6)->E
+	V+L5(7O+5)->V
+	Pause 
+	ClrHome
+	If O=6
+	Then
+		Disp "KOTEN:HIMOKO???
+		Pause 
+		ClrHome
+		Disp "HIMOKO, WHERE
+		Disp "ARE YOU?
+		Pause 
+		ClrHome
+		Disp "HIMOKO:I AM HERE
+		Disp "KOTEN.
+		Pause 
+		Disp "ASHIDA:KOTEN
+		Disp "HAS DESTROYED
+		Disp "SHINTO
+		Pause 
+		ClrHome
+		Disp "HIMOKO:KOTEN,
+		Disp "YOU WERE VERY
+		Disp "BRAVE
+		Pause 
+		ClrHome
+		Disp "ASHIDA:DONT JUST 
+		Disp "STAND THERE,
+		Disp "KISS HER!
+		Pause 
+		ClrDraw
+		RecallPic Pic6
+		Goto W 
+		If ((L<7) and (V>=(20*1.7^L)) or ((L>=7) and (V>=(40*1.4^L+240))
+		Then
+			ClrHome
+			Output(4,4,"LEVEL UP")
+			Pause 
+			ClrHome
+			Disp "MAX HP+4"
+			Disp "MAX MP+6"
+			Disp "ATTACK+5"
+			Disp "DEFENSE+3"
+			If L<12
+			Then
+				Disp "THE KNOWLEGE OF"
+				Disp "A NEW SPELL"
+				Disp "RUSHES TO YOU"
+			End
+			Pause 
+			L+1->L
+			R+4->R
+			S+6->S
+			P+5->P
+			Q+3->Q
+			Goto W
+			Lbl X
+			Disp "YOUR NINJA"
+			Disp "SKILLS ALLOWED"
+			Disp "YOU TO ESCAPE"
+			Pause 
+			Lbl W
+			0->O

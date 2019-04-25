@@ -1,0 +1,183 @@
+ClrHome
+Disp "KOTEN PLUNGED
+Disp "INTO DARKNESS
+Pause 
+ClrHome
+Lbl 3
+5->A
+1->X
+While H>0
+	Lbl J
+	If ZTmin=1
+	Then
+		For(B,0,50,1
+			Vertical (50+B)
+			Vertical (50-B)
+		End
+	End
+	10rand->B
+	If B>7
+	Then
+		Lbl K
+		X->L4(14)
+		A->L4(15)
+		prgmAUX3
+		L4(14)->X
+		L4(15)->A
+	End
+	If ((A=3) and (X=4)) or ((A=5) and (X+5)) or ((A=2) and (X=4))
+	Then
+		Menu("BY THE BOX","OPEN IT",I,"LEAVE IT",J
+		Lbl I
+		ClrHome
+		If (F<2) and (A=5) and (X=4)
+		Then
+			Disp "FROM INSIDE THE
+			Disp "TREASURE CHEST
+			Disp "KOTEN SAW A
+			Disp "GLOWING CRYSTAL
+			F+1->F
+			Pause 
+			Goto J
+		End
+		If (A=3) and (X=4) and (W!=6)
+		Then
+			Disp "KOTEN FOUND
+			Disp "THE LEGENDARY
+			Disp "SWORD OF UKYO!
+			Pause 
+			ClrHome
+			Disp "REVERENTLY, KOTEN
+			Disp "PICKED IT UP
+			Pause 
+			ClrHome
+			Disp "KOTEN:GREAT
+			Disp "WARRIOR, I WILL
+			Disp "USE THIS SWORD
+			Disp "TO DEFEAT THE 
+			Disp "EVIL GUY.
+			Pause 
+			ClrHome
+			Disp "TWO SHADOWY
+			Disp "FIGURES APPROACH
+			Disp "KOTEN.
+			Pause 
+			ClrHome
+			Disp "GHOST OF YOSHI:
+			Disp "YOU HAVE DONE
+			Disp "WELL. TAKE THE
+			Disp "SWORD AND YOU
+			Disp "WILL TRIUMPH
+			Pause 
+			ClrHome
+			Disp "GHOST OF UKYO:
+			Disp "YOU MUST NOT FAIL
+			Pause 
+			Disp "BESIDES, YOU
+			Disp "PROMISED THE 
+			Disp "EMPERORS.
+			Pause 
+			ClrHome
+			Disp "GHOSTS:RECIEVE
+			Disp "OUR HEALING SPIRIT
+			Pause 
+			R->H
+			S->M
+			P-3W->P
+			6->W
+			P+18->P
+			Goto J
+		End
+		Disp "A MONSTER IS IN
+		Disp "THE CHEST!
+		Pause 
+		Goto K
+	End
+	Lbl 9
+	[D](A,X)->D
+	If ZTmin=1
+	ClrDraw
+	If (D=1) or (D=4)
+	Then
+		Line(35,0,35,100
+		Line(70,0,70,100
+	End
+	If (D=4) or (D=5)
+	Line(35,100,70,100
+	If D=3.5
+	Line(35,0,70,0
+	If (D=2) or (D=6)
+	Then
+		If D=2
+		Line(35,0,35,100
+		Line(70,0,70,40
+		Line(70,40,100,40
+		Line(70,60,100,60
+		Line(70,60,70,100
+	End
+	If (D=3) or (D=5) or (D=6) or (D=3.5)
+	Then
+		If D!=6
+		Line(70,0,70,100
+		Line(35,0,35,40
+		Line(35,40,0,40
+		Line(35,60,0,60
+		Line(35,60,35,100
+	End
+	If D>=7
+	Then
+		If (D!=7.5) and (D!=11)
+		Line(0,60,100,60
+		If (D=7.5) or (D=11)
+		Then
+			Line(0,40,100,40
+			Line(0,60,35,100
+			Line(70,100,70,60
+			Line(70,60,100,60
+			If D=11
+			Line(100,60,100,40
+		End
+		If (D=8) or (D=10)
+		Then
+			If D=10
+			Line(100,60,100,40
+			Line(0,40,35,40
+			Line(35,40,35,0
+			Line(70,40,70,0
+			Line(70,40,100,40
+		End
+		If (D=7) or (D=9)
+		Line(0,40,100,40
+		If D=9
+		Line(0,40,0,60
+	End
+	If D=2.5
+	Then
+		Line(0,40,100,40
+		Line(25,60,0,60
+		Line(35,60,35,100
+		Line(70,60,100,60
+		Line(70,60,70,100
+	End
+	0->O
+	While (O<24) or ((O>26) and (O!=35))
+		getKey->O
+	End
+	2->B
+	If (O=24) and ((D!=9) and (D!=5) and (D!=4) and (D!=1) and (D!=2))
+	X-1->X
+	If (O=25) and (D!=5) and (D!=4) and ((D<7) or (D=7.5) or (D=11))
+	A-1->A
+	If (O=26) and ((D=2) or ((D>4) and (D!=11) and (D!=10))
+	X+1->X
+	If (O=34) and ((D!=2.5) and (D!=7) and (D!=9) and (D!=3.5) and (D!=7.5) and (D!=11))
+	A+1->A
+	If ((A>5) or (A<1) or (X>5) or (X<1))
+	Then
+		Disp "KOTEN MADE IT
+		Disp "OUT ALIVE!
+		Goto 2
+	End 
+End
+Goto J
+Lbl 2
