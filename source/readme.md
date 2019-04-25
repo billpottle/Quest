@@ -1,1 +1,1 @@
-Here are the source code files for the main program (Quest) and the various auxiliary programs (delay, traveling, battle, etc)
+Here are the source code files for the main program (Quest) and the various auxiliary programs (delay, traveling, battle, etc). Note that there are other assets (images, matricies, pre-loaded variables, etc) which are necessary for the program to run. All files can be downloaded from the group.82g file
