@@ -1,3 +1,4 @@
+vim: syntax=basic
 ClrHome
 PlotsOff 
 ClrDraw
