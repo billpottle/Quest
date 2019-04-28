@@ -1,3 +1,4 @@
+vim: syntax=solidity //not really, but no highlighting for TI-Basic
 K+.25->K
 ClrDraw
 If K=1
