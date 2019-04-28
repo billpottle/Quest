@@ -1,4 +1,4 @@
-vim: syntax enable
+vim: syntax=solidity
 ClrHome
 PlotsOff 
 ClrDraw
