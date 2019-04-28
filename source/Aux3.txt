@@ -1,3 +1,4 @@
+vim: syntax=solidity //not really, but no highlighting for TI-Basic
 10rand->A
 If K=15
 Goto 3
