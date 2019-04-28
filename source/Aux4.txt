@@ -1,3 +1,4 @@
+vim: syntax=solidity //not really, but no highlighting for TI-Basic
 ClrHome
 Disp "KOTEN PLUNGED
 Disp "INTO DARKNESS
