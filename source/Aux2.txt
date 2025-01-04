@@ -142,7 +142,7 @@ Then
 	Disp "YOU MUST GO TO"
 	Disp "THE BARRIER"
 	Disp "POINT. IF YOU"
-	Disp "POSESS THE THREE"
+	Disp "POSSESS THE THREE"
 	Disp "CRYSTALS,"
 	Pause 
 	ClrHome
